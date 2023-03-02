@@ -30,6 +30,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
     
 }
 :root{
@@ -84,34 +85,42 @@ nav ul li a{
     height: 0.2rem;
     width: 2rem;
     margin-bottom: 0.4rem;
+    border-radius: 0.5rem;
 }
 
 @media screen and (max-width:768px){
     .toggle__menu{
         display: block;
     }
+    nav.open ul{
+        right: -50%;
+        transition: 0.5s ease-in;
+    }
     nav ul{
         display: block;
         position: absolute;
-        left: 0;
+        right: -50%;
         top: 6.5rem;
         background-color: var(--white);
         width: 100%;
-        width: 100%;
         height: 100%;
-        text-align: center;
+        text-align: left;
+        transition: 0.5s ease-in;
     }
 
     nav ul li a{
         display: block;
         width: 100%;
         padding: 1rem;
+        border-bottom: 1px solid rgba(185, 185, 185, 0.572);
+        
     }
     nav ul li:hover{
-        background-color: var(--primary);
+        background-color: var(--black);
+        
     }
     nav ul li :hover a{
-        color: var(--white) ;
+        color: var(--white);
     }
 }
 /*------header ends here------*/
