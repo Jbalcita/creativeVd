@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Contacts</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                    <div class="header__logo">
+                        <img src="./img/logo.png" alt="">
+                        <h3>Creative <span>Visual</span> Design</h3>
+                    </div>
+
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="aboutme.html">About</a></li>
+                                <li><a href="service.html">Services</a></li>
+                                <li><a href="updates.html">Updates</a></li>
+                                <li><a href="contacts.html">Contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="toggle__menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+            </div>
+        </div>
+
+    </header>
+    
+    
+    <section class="contact_section">
+        <div class="container">
+                <div class="abt__wrapper">
+        
+            <div class="contact__wrapper"> 
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quaerat.</p>
+            <div class="icon">
+                <i class="fa-solid fa-phone-flip fa-sm"></i>
+                <span class="text" style="  margin-left: 5px;">+63 932 102 0819</span>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-envelope fa-sm"></i>
+                <span class="text"style="  margin-left: 5px;">inquire@©Creativevisualdesign</span>
+            </div>
+            <div class="icon">
+                <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
+                <span class="text" style="  margin-left: 13px;">Baloc Road, brgy san ignacio San Pablo city,Laguna 4000</span>
+            </div>
+            <div class="social__icon">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+                <i class="fa-brands fa-twitter fa-xl"></i>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+                <i class="fa-brands fa-youtube fa-xl"></i>
+            </div>
+            </div>
+            <div class="form-container">
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <input type="text" id="email" name="email" placeholder="Enter Email">
+                    <textarea id="message" name="message" placeholder="message" required></textarea>
+                    <a href="#" class="Button">EXPLORE MORE</a>
+              </div>
+            
+        </div>
+        </div>
+        </section>
+
+
+
+    
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+    
+            <div class="footer__wrapper">
+                <div class="socialLinks">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a></li>
+                    </ul>
+                    <p>
+                        <small>
+                            Baloc Road, Brgy. San Ignacio San Pablo City, Laguna 4000
+                        </small>
+                    </p>
+                </div>
+                
+                <p>
+                    <small>
+                        ©CREATIVEVISUALDESIGNS2022
+                    </small>
+                </p>
+            </div>
+    
+        </div>
+    </footer>
+
+
+    <script>
+            const nav = document.querySelector(".nav");
+            const toggleMenu = document.querySelector(".toggle__menu");
+        
+        
+             toggleMenu.addEventListener("click", ()=>{
+        
+            toggleMenu.classList.toggle("open");
+            nav.classList.toggle("open");
+        
+        });
+    </script>
+
+</body>
+</html>
